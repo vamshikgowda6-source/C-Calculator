@@ -64,12 +64,8 @@ int main(){
 
     case 'q':
         printf("Thank You,Visit again\n\n");
-        return 0;
-
-        
-
     }
     
-    } 
-    
+    } //while
+    return 0;
 }
