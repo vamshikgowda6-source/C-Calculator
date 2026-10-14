@@ -8,7 +8,7 @@ A simple calculator program written in C.
 - Subtraction
 - Multiplication
 - Division
-- Modulo
+- Modulus
 - Power
 - Quit option
 

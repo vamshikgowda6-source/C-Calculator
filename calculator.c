@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-    printf("Simple C Calculator\n");
-    printf("Operations: + - * / %% ^ (power)\n");
+    printf("Scientific C Calculator\n");
+    printf("Operations: + - * / %% ^ sinx\n");
     printf("Enter 'q' to quit.\n\n");
     char choice;
     int a,b;
-    // for (int i = 0; i < 1; i++)
+    float c;
+
     while (1)
     {
-        printf("Choose operation (+ - * / %% ^) or q to quit:");
+        printf("Choose operation (+ - * / %% ^ s=sinx) or q to quit:");
         scanf(" %c",&choice);
     switch (choice)
     {
@@ -54,10 +55,21 @@ int main(){
         printf("%d ^ %d= %f\n\n",a,b,pow(a,b));
         break;
 
+
+    case 's':
+        printf("Enter the value of x:");
+        scanf("%f",&c);
+        printf("sin(%f)=%f\n\n",c,sin(c));
+        break;
+
     case 'q':
         printf("Thank You,Visit again\n\n");
+        return 0;
+
+        
+
     }
     
-    } //while
-    return 0;
+    } 
+    
 }
